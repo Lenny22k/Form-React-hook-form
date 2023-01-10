@@ -87,7 +87,6 @@ export function Form() {
           <p className="error-message">Enter a valid age .</p>
         )}
       </div>
-      {console.log(errors)}
       <div className="form-group">
         <label>Profissão</label>
         <select
