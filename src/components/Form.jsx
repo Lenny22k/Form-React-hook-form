@@ -58,14 +58,14 @@ export function Form() {
         <input
           className={errors?.password && 'input-error'}
           type="password"
-          {...register('password', { required: true, minLength: 8 })}
+          {...register('password', { required: true, minLength: 7 })}
         />
         {errors?.password?.type === 'required' && (
           <p className="error-message">Password is required.</p>
         )}
 
         {errors?.password?.type === 'minLength' && (
-          <p className="error-message">Password is menor que number.</p>
+          <p className="error-message">Password needs to have at least 7 characters..</p>
         )}
       </div>
 
